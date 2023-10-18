@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/kyuctoiac.css" />
+        <script
+            src="https://kit.fontawesome.com/533aad8d01.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-container">
+                <img
+                    src="https://phimmoiplus.org/wp-content/uploads/2023/02/logo-phimmoi.png"
+                />
+                <div class="header-container__first">
+                    <form action="">
+                        <input
+                            class="header-search"
+                            placeholder="Tìm:tên phim,đạo diễn,diễn viên"
+                            type="text"
+                            name=""
+                            id=""
+                        />
+                    </form>
+                    <button class="header-search__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="header-search__announce">
+                        <p>phimmoiplus.org says</p>
+                        <p>
+                            Bạn chưa nhập từ khóa.(Không tính các kí tự đặc biệt
+                            vào độ dài từ khóa)
+                        </p>
+                        <button>Ok</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-line"></div>
+            <div class="header-roster">
+                <ul class="header-roster__content">
+                    <li class="header-content__out">PHIMMOI</li>
+                    <li class="header-content__out">THỂ LOẠI</li>
+                    <div class="country-list country-list__style">
+                        <ul>
+                            <li>Chiến Sự</li>
+                            <li>Hình Sự</li>
+                            <li>Hoạt Hình</li>
+                        </ul>
+                        <ul>
+                            <li>Cổ Trang</li>
+                            <li>Võ Thuật</li>
+                            <li>Thần Thoại</li>
+                        </ul>
+                        <ul>
+                            <li>Gia Đình</li>
+                            <li>Kinh Dị</li>
+                            <li>Tài Liệu</li>
+                        </ul>
+                        <ul>
+                            <li>Hài Hước</li>
+                            <li>Tâm Lý</li>
+                        </ul>
+                        <ul>
+                            <li>Hành Động</li>
+                            <li>Viễn Tưởng</li>
+                        </ul>
+                    </div>
+                    <li class="header-content__out">QUỐC GIA</li>
+                    <div class="country-list">
+                        <ul>
+                            <li>Ấn Độ</li>
+                            <li>Việt Nam</li>
+                            <li>Đài Loan</li>
+                        </ul>
+                        <ul>
+                            <li>Hồng Kông</li>
+                            <li>Hà Quốc</li>
+                            <li>Philippines</li>
+                        </ul>
+                        <ul>
+                            <li>Nhật Bản</li>
+                            <li>Trung Quốc</li>
+                            <li>Châu Âu</li>
+                        </ul>
+                        <ul>
+                            <li>Thái Lan</li>
+                            <li>Mỹ</li>
+                        </ul>
+                    </div>
+                    <li class="header-content__out">PHIM LẺ</li>
+                    <div class="country-list country-list__odd">
+                        <ul>
+                            <li>Phim Lẻ 2023</li>
+                            <li>Phim Lẻ 2019</li>
+                            <li>Phim Lẻ 2015</li>
+                            <li>Phim Lẻ 2011</li>
+                        </ul>
+                        <ul>
+                            <li>Phim Lẻ 2022</li>
+                            <li>Phim Lẻ 2018</li>
+                            <li>Phim Lẻ 2014</li>
+                            <li>Phim Lẻ 2010</li>
+                        </ul>
+                        <ul>
+                            <li>Phim Lẻ 2021</li>
+                            <li>Phim Lẻ 2017</li>
+                            <li>Phim Lẻ 2013</li>
+                        </ul>
+                        <ul>
+                            <li>Phim Lẻ 2020</li>
+                            <li>Phim Lẻ 2016</li>
+                            <li>Phim Lẻ 2012</li>
+                        </ul>
+                    </div>
+                    <li class="header-content__out">PHIM BỘ</li>
+                    <div class="country-list country-list__long">
+                        <ul>
+                            <li>Phim Bộ Hàn Quốc</li>
+                            <li>Phim Bộ Hồng Kông</li>
+                            <li>Phim Bộ Nhật Bản</li>
+                        </ul>
+                        <ul>
+                            <li>Phim Bộ Trung Quốc</li>
+                            <li>Phim Bộ Mỹ</li>
+                            <li>Phim Bộ Ấn Độ</li>
+                        </ul>
+                        <ul>
+                            <li>Phim Bộ Đài Loan</li>
+                            <li>Phim Thái Lan</li>
+                            <li>Phim Bộ Philippines</li>
+                        </ul>
+                    </div>
+                    <li class="header-content__out">CHIẾU RẠP</li>
+                    <li class="header-content__out">THUYẾT MINH</li>
+                    <li class="header-content__out">MỚI CẬP NHẬT</li>
+                    <li class="header-content__out">TRAILER</li>
+                    <li class="header-content__out">PHIM MỚI</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- MAIN-BODY -->
+        <main class="main main2">
+            <div class="container container2">
+                <div class="main-first">
+                    <p>
+                        Hãy truy cập PHIMMOI bằng tên miền mới của chúng tôi
+                        <span>PhimMoiPlus.Org</span>. Cám ơn các bạn đã ủng hộ
+                        Phim Mới thời gian qua. Trân trọng!
+                    </p>
+                </div>
+                <div class="main-second">
+                    <p>
+                        Cùng tham gia Group trên Telegram với đường link<a
+                            href="#!"
+                        >
+                            t.me/fimmoi</a
+                        >
+                        để Yêu Cầu Phim và nhận thông báo về PhimMoi.Net
+                    </p>
+                </div>
+                <div class="main-third">
+                    <p><a>PHIMMOIPLUS</a> / <a href="#!">PHIM BỘ</a> / Cây Táo Nở Hoa</p>
+                </div>
+
+                <!-- === -->
+
+                <div class="main-difficults main-difficults2">
+                    <div class="main-difficults__right">
+                        <div class="movie-theaters">
+                            <div class="moive-theater__right">
+                                <img
+                                    src="https://kenh14cdn.com/203336854389633024/2021/4/6/cats-16177006517111930529165.jpg"
+                                    alt=""
+                                />
+                                <button>Xem phim</button>
+                            </div>
+                            <div class="moive-theater__left">
+                                <h1>Cây táo nở hoa</h1>
+                                <p class="moive-theater__left-desc">
+                                    Cay Tao No Hoa (2021)
+                                </p>
+                                <div class="movie-left__info">
+                                    <p>
+                                        Trạng thái:<span class="active-4"
+                                            >Tập 71 HD</span
+                                        >
+                                    </p>
+                                    <p>
+                                        Đạo diễn:<a href="#!"
+                                            >Võ Thạch Thảo</a
+                                        >
+                                    </p>
+                                    <p>Quốc gia: <a href="#!">Việt Nam</a></p>
+                                    <p>Năm sản xuất: <a href="#!">2021</a></p>
+                                    <p>Thời lượng: <span>48 phút/tập</span></p>
+                                    <p>Chất lượng: <span>Bản đẹp</span></p>
+                                    <p>Độ phân giải: <span>Full HD</span></p>
+                                    <p>
+                                        Ngôn ngữ:
+                                        <span>Phụ đề Việt</span>
+                                    </p>
+                                    <p>
+                                        Thể loại:
+                                        <a href="#!"
+                                            >Gia Đình,Tình Cảm</a
+                                        >
+                                    </p>
+                                    <p>Lượt xem: <span>4.8k</span></p>
+                                    <p>
+                                        Công ty Sx:
+                                        <span>Đang cập nhật</span>
+                                    </p>
+                                </div>
+                                <div class="movie-left__bottom">
+                                    <p>ĐÁNH GIÁ PHIM <span>(1 lượt)</span></p>
+                                    <div class="stars-3">
+                                        <i
+                                            class="active-star fa-solid fa-star stars-3_1"
+                                        ></i>
+                                        <i
+                                            class="active-star fa-solid fa-star stars-3_2"
+                                        ></i>
+                                        <i
+                                            class="active-star fa-solid fa-star stars-3_3"
+                                        ></i>
+                                        <i
+                                            class="active-star fa-solid fa-star stars-3_4"
+                                        ></i>
+                                        <i
+                                            class="active-star fa-solid fa-star stars-3_5"
+                                        ></i>
+                                        <i
+                                            class="active-star fa-solid fa-star stars-3_6"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star stars-3_7"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star stars-3_8"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star stars-3_9"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star stars-3_10"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-theaters__update">
+                            <p>Tập phim mới nhất:</p>
+                            <button>Tập 16</button>
+                            <button>Tập 15</button>
+                            <button>Tập 14</button>
+                            <button>Tập 13</button>
+                            <button>Tập 12</button>
+                        </div>
+
+                        <div class="movie-theaters__actor">
+                            <p>Diễn viên</p>
+                            <div class="movie-actor__imgs">
+                                <figure>
+                                    <img
+                                        src="https://i.mydramalist.com/eW85d_5_c.jpg"
+                                        alt=""
+                                    />
+                                    <p>Choi Soo-young</p>
+                                </figure>
+                                <figure>
+                                    <img
+                                        src="https://i.mydramalist.com/eW85d_5_c.jpg"
+                                        alt=""
+                                    />
+                                    <p>Jang Hyuk</p>
+                                </figure>
+                                <figure>
+                                    <img
+                                        src="https://i.mydramalist.com/eW85d_5_c.jpg"
+                                        alt=""
+                                    />
+                                    <p>Jang Hyun Sung</p>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="movie-theaters__info">
+                            <p>
+                                KÝ ỨC TỘI ÁC - TELL ME WHAT YOU SAW (2020) - -
+                                FULL (16/16) HD THUYẾT MINH
+                            </p>
+                        </div>
+                        <div class="movie-theaters__content">
+                            <h2>NỘI DUNG PHIM</h2>
+                            <div class="movie-content__like">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <button>Thích</button>
+                            </div>
+                            <div class="movie-content__share">
+                                <button>Chia sẻ</button>
+                            </div>
+                            <p class="movie-content-desc">
+                                Oh Hyun Jae (Jang Hyuk thủ vai) từng là một
+                                chuyên gia phân tích tâm lý tội phạm hàng đầu.
+                                Anh đã phá được rất nhiều vụ án bởi tài năng của
+                                mình, tuy nhiên một vụ tai nạn được gây ra bởi
+                                một kẻ sát nhân hàng loạt đã cướp đi tính mạng
+                                vị hôn thê của Hyun Jae. Sau vụ tai nạn kinh
+                                hoàng ấy, Oh Hyun Jae hoàn toàn biến mất và sống
+                                cuộc đời ẩn dật. Cha Soo Young (Soo Young thủ
+                                vai) là một cảnh sát ở vùng quê. Cô có một khả
+                                năng đặc biệt, có thể ghi nhớ tất cả mọi thứ cô
+                                đã nhìn thấy. Bởi khả năng này, Soo Young được
+                                lựa chọn để phối hợp với Oh Hyun Jae để bắt kẻ
+                                sát nhân hàng loạt.
+                            </p>
+                        </div>
+                        <div class="movie-theaters__footer">
+                            <h2>Từ khóa</h2>
+                            <a href="#!">Ký Ức Tội Ác, Tell Me What You Saw</a>
+                            <p>
+                                xem phim Ký Ức Tội Ác viesub, xem Bí Ký Ức Tội
+                                Ác vietsub online tap 1, tap 2, tap 3, tap 4,
+                                tap 5 phim Tell Me What You Saw ep 5, ep 6, ep
+                                7, ep 8, ep 9, ep 10, Lịch chiếu phim Ký Ức Tội
+                                Ác, xem Ký Ức Tội Ác tập 11, tập 12, tập 13, tập
+                                14, tập 15, phim Ký Ức Tội Ác tap 16, tap 17,
+                                tap 18, tap 19, tap 20, xem phim Ký Ức Tội Ác
+                                tập 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
+                                33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,
+                                45, 46, 47, 48, 49, 50, Ký Ức Tội Ác tap cuoi,
+                                Tell Me What You Saw vietsub tron bo, Ký Ức Tội
+                                Ác phim3s, Ký Ức Tội Ác motphim,vtv16, khoaitv,
+                                phimgi, hatdetv, xemphimso, hdo, topphimhd,
+                                khoaitv, vungtv, dongphim, fptplay, zingtv,
+                                xemphimgi Ký Ức Tội Ác youtube,vietsubtv,
+                                bomtan, Ký Ức Tội Ác phimmoi, hdonline,
+                                phimbathu, bilutv, banhtv, goldphim, bongngotv,
+                                bilutvs, phimmoizz, fullphim, 247phim, dongphym,
+                                xemphimvui, phimhay.co, galaxyplay, fptplay,
+                                hdviet, hdonline, hdo.tv, netflix,
+                                xemphimplus,phimmoiz, iphimmoi, phimchill,
+                                xemphimchill, ephimmoi, ezphimmoi, azphimmoi,
+                                phimmoichill, phimgii, xemphimgii, billuu,
+                                bichill, motchill, khophim18, zaphim, 2phimhay,
+                                iphimhay, iphim, VTVGiaitri, PhimHD7, Hplus,
+                                Kphim, Cliptv, yeuphimmoi, Vietsubtv, Bomtan,
+                                Biphim, Khophimplus, Ký Ức Tội Ác full, Tell Me
+                                What You Saw online, Ký Ức Tội Ác Thuyết Minh,
+                                Ký Ức Tội Ác Vietsub, Ký Ức Tội Ác Lồng Tiếng
+                            </p>
+                        </div>
+                        <div class="movie-theaters__cmt">
+                            <h2>Bình Luận Phim Ký Ức Tội Ác</h2>
+                            <div class="movie-cmt__box">
+                                <p>
+                                    Đừng quên nhấn like và theo dõi Fanpage của
+                                    <strong> PhimMoi.Net</strong>
+                                    <button>
+                                        <i class="fa-solid fa-thumbs-up"></i
+                                        >Theo dõi 19K
+                                    </button>
+                                    để chúng tôi có thể vực dậy sau cú ngã
+                                    đau.Thank!
+                                </p>
+                                <div class="movie-box__stack">
+                                    <p>0 bình luận</p>
+                                    <p>Sắp xếp theo</p>
+                                    <select name="" id="">
+                                        <option value="">Mới nhất</option>
+                                        <option value="">Cũ nhất</option>
+                                    </select>
+                                </div>
+                                <hr />
+                                <div class="movie-box__info">
+                                    <img
+                                        src="https://tse4.mm.bing.net/th?id=OIP.mJIcSIFJ6lTkLnMXJeD7FgHaEK&pid=Api&P=0&h=220"
+                                        alt=""
+                                    />
+                                    <input
+                                        placeholder="Viết bình luận"
+                                        type="text"
+                                    />
+                                    <div class="movie-box__up">
+                                        <button>Đăng</button>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-difficults__left">
+                        <div class="main-left__header">
+                            <img src="../img/star.png" alt="" />
+                            <h2>PHIM XEM NHIỀU</h2>
+                        </div>
+                        <div class="main-left__main">
+                            <div class="left-main__header">
+                                <img src="../img/dGyEH3E - Imgur.jpg" alt="" />
+                                <p class="sub">HD Vietsub + Thuyết Minh</p>
+                                <div class="left-main__info">
+                                    <a href="#!">MA TƯỚC - CHIM SẺ</a>
+                                    <p>Sparrow</p>
+                                    <div class="stars">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                    <p class="aaaaa">19 lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="left-main__1">
+                                <img
+                                    class="img-poster"
+                                    src="https://tse4.mm.bing.net/th?id=OIP.zqIW4DuHKPrkso28FVV83AHaLH&pid=Api&P=0&h=220"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p>
+                                        <a href="../html/kyuctoiac.html"
+                                            >Ký Ức Tội Ác</a
+                                        >
+                                    </p>
+                                    <p>Tell Me What You Saw</p>
+                                    <p>10 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1 left-main__2">
+                                <img
+                                    class="img-poster"
+                                    src="https://kenh14cdn.com/203336854389633024/2021/4/6/cats-16177006517111930529165.jpg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="../html/caytaonohoa.html">CÂY TÁO NỞ HOA</a></p>
+                                    <p>Cay Tao No Hoa (2021)
+                                    </p>
+                                    <p>84 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1">
+                                <img
+                                    class="img-poster"
+                                    src="https://2.bp.blogspot.com/-_w8ZjEQVpb4/UnUmKorXD9I/AAAAAAAAmFM/MRXbFLec7Bk/s0/thumb_co-be-oshin.jpg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="../html/cobeoshin.html">CÔ BÉ OSHIN 1983</a></p>
+                                    <p>Oshin (1983)</p>
+                                    <p>10 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1 left-main__2">
+                                <img
+                                    class="img-poster"
+                                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8235ecb0-b675-46d0-a124-3d6ee18dcc9a/d85qq3z-c7192618-9e9d-478c-ad97-ac23b91a0afe.png/v1/fill/w_706,h_1132,strp/bleach_render_by_4_ever_darkness_d85qq3z-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ0MyIsInBhdGgiOiJcL2ZcLzgyMzVlY2IwLWI2NzUtNDZkMC1hMTI0LTNkNmVlMThkY2M5YVwvZDg1cXEzei1jNzE5MjYxOC05ZTlkLTQ3OGMtYWQ5Ny1hYzIzYjkxYTBhZmUucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.yQSfJOa1FQoTcwyKPQTrX6ACs9czeYiviO46Xap1DKc"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="./html/bleach.html">BLEACH</a></p>
+                                    <p>Sứ Mạng Thần Chết Ichigo</p>
+                                    <p>100 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1">
+                                <img
+                                    class="img-poster"
+                                    src="https://ss-images.saostar.vn/wp700/pc/1628492493158/saostar-njn9uaj2o160wy0y.jpg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="./html/duquanca.html">Dữ Quân Ca</a></p>
+                                    <p>Dream of Chang An 
+                                    </p>
+                                    <p>90 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1 left-main__2">
+                                <img
+                                    class="img-poster"
+                                    src="https://phimdammy.com/wp-content/uploads/2019/09/tran-tinh-lenh-4.jpg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="./html/trantinhlenh.html">Trần Tình Lệnh</a></p>
+                                    <p>The Untamed </p>
+                                    <p>1234 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1">
+                                <img
+                                    class="img-poster"
+                                    src="https://static2.vieon.vn/vieplay-image/poster_v4/2022/05/13/sg3r1762_660x946-hoangtugacmai.jpg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="./html/hoangtugacmai.html">Hoàng Tử Gác Mái</a></p>
+                                    <p>Rooftop Prince </p>
+                                    <p>678 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1 left-main__2">
+                                <img
+                                    class="img-poster"
+                                    src="https://vtczone.vn/lich-chieu-phim-tuong-quan-tai-thuong/imager_1_23978_700.jpg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="./html/tuongquantaithuong.html">Tướng Quân Tại Thượng</a></p>
+                                    <p>Oh My General </p>
+                                    <p>123 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                            <div class="left-main__1">
+                                <img
+                                    class="img-poster"
+                                    src="https://media.vov.vn/sites/default/files/styles/large/public/2021-08/unnamed_14_2.jpeg"
+                                    alt=""
+                                />
+                                <div class="left-main__1-desc">
+                                    <p><a href="./html/gdls1.html">Gia Đình Là Số Một – Phần 2</a></p>
+                                    <p>High Kick (Season 2) 
+                                    </p>
+                                    <p>1001 lượt xem</p>
+                                    <div class="stars stars-2">
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                        <img src="../img/star.png" alt="" />
+                                    </div>
+                                </div>
+                                <p class="voice-over">HD Thuyết minh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-enjoy">
+                    <h1>CÓ THỂ BẠN THÍCH XEM</h1>
+                    <hr />
+                    <div class="movie-enjoy__list">
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                    <div class="movie-enjoy__list">
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                    <div class="movie-enjoy__list">
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                    <div class="movie-enjoy__list">
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img
+                                src="https://tse2.mm.bing.net/th?id=OIP.L7DTD_RfBurciUHvgulg9QAAAA&pid=Api&P=0&h=220"
+                                alt=""
+                            />
+                            <h2>THỢ SĂN TIỀN THƯỞNG TUỔI HỌC ĐƯỜNG (PHẦN 1)</h2>
+                            <p>Teenage Bounty Hunters (Season 1) (2020)</p>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-first">
+                    <img
+                        src="https://phimmoiplus.org/wp-content/uploads/2023/02/logo-phimmoi.png"
+                        alt="PhimMoiPlus"
+                    />
+                    <p class="footer-first__1">
+                        Copyright 2023 © <span>Phimmoi</span>
+                    </p>
+                    <p class="footer-first__1">
+                        Trang xem phim Online với giao diện mới được bố trí và
+                        thiết kế thân thiện với người dùng. Nguồn phim được tổng
+                        hợp từ các website lớn với đa dạng các đầu phim và thể
+                        loại vô cùng phong phú.
+                    </p>
+                    <p class="footer-first__1">
+                        <span>Phim Moi</span>|<span> Phimmoi</span>|<span>
+                            PhimMoi
+                        </span>
+                    </p>
+                    <div class="footer-first__post">
+                        <img src="../img/dGyEH3E - Imgur.jpg" alt="" />
+                        <div class="footer-post__header">
+                            <img
+                                class="_1drn _-s img"
+                                src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-1/240389840_106659735072417_8374219346973373266_n.png?stp=cp0_dst-png_p80x80&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=ZRqWbuomnBUAX_8z4dy&amp;_nc_ht=scontent.fhan20-1.fna&amp;oh=00_AfDgIjNTC7aAvALhpBhpyqj8kG6rFJ-TNQrNG7VR3zrtlg&amp;oe=6531EE3C"
+                                height="50"
+                                width="50"
+                                alt=""
+                            />
+                            <div class="footer-header__desc">
+                                <p>PHIMMOI.net</p>
+                                <p>19.874 người theo dõi</p>
+                            </div>
+                            <div class="footer-header__btns">
+                                <div class="footer-header__btn">
+                                    <button>Theo dõi Trang</button>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </div>
+                                <div class="footer-header__btn2">
+                                    <button>Chia sẻ</button>
+                                    <i class="fa-solid fa-share"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li class="active-3">Phim Mới</li>
+                        <li>Phim lẻ mới</li>
+                        <li>Phim bộ mới</li>
+                        <li>Phim chiếu rạp</li>
+                        <li>Phim sắp chiếu</li>
+                        <li>Phim thuyết minh</li>
+                    </ul>
+                    <ul>
+                        <li class="active-3">Phim Lẻ</li>
+                        <li>Phim hành động</li>
+                        <li>Phim kiếm hiệp</li>
+                        <li>Phim kinh dị</li>
+                        <li>Phim viễn tưởng</li>
+                        <li>Phim hoạt hình</li>
+                    </ul>
+                    <ul>
+                        <li class="active-3">Phim Bộ</li>
+                        <li>Phim bộ Hàn Quốc</li>
+                        <li>Phim bộ Trung Quốc</li>
+                        <li>Phim bộ Mỹ</li>
+                        <li>Phim bộ Việt Nam</li>
+                        <li>Phim bộ Hồng Kông</li>
+                    </ul>
+                </div>
+                <div class="footer-last">
+                    <div class="footer-last__phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="footer-last__desc">
+                            <p>Email liên hệ:</p>
+                            <p>lienhe.phimmoi.net@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
