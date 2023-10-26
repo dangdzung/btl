@@ -3,7 +3,7 @@
     height: 2000px !important;
     background-color: aqua;
 } */
-.main-third p{
+.main-third p {
     color: #8f8f90;
 }
 .main-difficults__right {
@@ -261,11 +261,14 @@
 }
 .movie-content-desc {
     margin-top: 30px;
-    width: 100%;
-    height: 100%;
+    width: 650px;
+    height: 155px;
     font-size: 15px;
     color: white;
     line-height: 27px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;    
 }
 .movie-theaters__footer {
     width: 100%;
@@ -421,9 +424,9 @@
     font-size: 11px;
     padding-left: 5px;
     margin-top: 5px;
-    color:#bcbeac;
+    color: #bcbeac;
 }
-.movie-list-item p:last-of-type{
+.movie-list-item p:last-of-type {
     font-size: 14px;
     margin-top: 9px;
 }
